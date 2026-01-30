@@ -1,9 +1,9 @@
 # 🛠️ Claude 도구 종합 가이드 v3.0
 # Claude Tools Complete Guide v3.0
 
-> **작성자**: Bella (OZKIZ)
-> **작성일**: 2026-01-30
-> **버전**: v3.0
+> **작성자**: Bella (OZKIZ)  
+> **작성일**: 2026-01-30  
+> **버전**: v3.0  
 > **용도**: 모든 Claude 도구 및 기능의 설정, 활용, 프롬프트 완벽 정리
 
 ---
@@ -380,8 +380,8 @@ response = client.beta.messages.create(
 
 ### 사용 가능한 라이브러리
 ```
-numpy, pandas, matplotlib, seaborn, scipy,
-scikit-learn, pillow, openpyxl, xlrd,
+numpy, pandas, matplotlib, seaborn, scipy, 
+scikit-learn, pillow, openpyxl, xlrd, 
 python-docx, reportlab, beautifulsoup4
 ```
 
@@ -610,7 +610,7 @@ except anthropic.APIError as e:
 ### OZKIZ 활용 예시
 ```
 # 긴 보고서 생성 시 스트리밍 유용
-"OZKIZ 월간 매출 보고서 작성해줘"
+"OZKIZ 월간 매출 보고서 작성해줘" 
 → 스트리밍으로 실시간으로 내용 확인하면서 기다릴 수 있음!
 ```
 
@@ -629,8 +629,8 @@ except anthropic.APIError as e:
 ### 왜 사용하나요? / 為什麼要使用？
 ```
 ❌ 일반 응답: "답은 12,231입니다"
-✅ Extended Thinking:
-   [thinking] "27 × 453을 계산해보자.
+✅ Extended Thinking: 
+   [thinking] "27 × 453을 계산해보자. 
               453 = 400 + 50 + 3
               27 × 400 = 10,800
               27 × 50 = 1,350
@@ -767,7 +767,7 @@ Claude 4 모델은 보안상 요약된 사고 과정을 반환합니다.
 
 ### OZKIZ 활용 예시
 ```
-"OZKIZ의 2025년 매출 데이터를 분석해서
+"OZKIZ의 2025년 매출 데이터를 분석해서 
  2026년 성장 전략을 제안해줘.
  단계별로 생각하면서 분석해줘."
 
@@ -867,7 +867,7 @@ response = client.beta.messages.create(
 "이 상품이 어떤 카테고리인지 분류해줘: 꽃무늬 원피스"
 
 # 복잡한 전략 분석 → high effort
-"OZKIZ의 미국 시장 진출 전략을 분석하고
+"OZKIZ의 미국 시장 진출 전략을 분석하고 
  경쟁사 대비 차별화 포인트를 제안해줘"
 ```
 
@@ -1830,7 +1830,7 @@ OZKIZ의 미국 시장 진출 전략을 분석해줘.
 
 ### 파일 정리
 ```
-Downloads 폴더에서 30일 이상 된 파일들을
+Downloads 폴더에서 30일 이상 된 파일들을 
 Archive 폴더로 이동해줘.
 
 단, 실행 전에 이동할 파일 목록 먼저 보여줘.
