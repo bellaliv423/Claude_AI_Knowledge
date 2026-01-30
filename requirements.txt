@@ -1,0 +1,34 @@
+# Claude AI Knowledge Base - Requirements
+# Python 3.10+ required
+
+# Anthropic SDK
+anthropic>=0.77.0
+
+# MCP (Model Context Protocol)
+mcp>=1.0.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# HTTP Requests
+httpx>=0.25.0
+requests>=2.31.0
+
+# Async Support
+aiohttp>=3.9.0
+anyio>=4.0.0
+
+# JSON Schema Validation
+jsonschema>=4.20.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Type Hints
+typing-extensions>=4.10.0
+pydantic>=2.0.0
+
+# Development Tools
+pytest>=8.0.0
+black>=24.0.0
