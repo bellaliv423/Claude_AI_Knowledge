@@ -20,10 +20,23 @@
 | 2026-01-30 | 예제 코드 6개 작성 | Claude |
 | 2026-01-30 | v3.0 업데이트 (Streaming, Extended Thinking) | Claude |
 | 2026-02-02 | AI 협업 문서 생성 및 기획 수립 | Claude |
+| 2026-02-02 | 최신 기능 조사 및 TODO 문서 생성 | Claude |
 
 ---
 
 ## 다음 단계 기획 / Next Steps Planning
+
+### **[NEW] 최신 기능 문서화 (2026-02-02 조사 결과)**
+> 상세 내용: `NEW_FEATURES_TODO_2026.md` 참조
+
+| 우선순위 | 작업 | 상태 |
+|----------|------|------|
+| 1 | `05_Structured_Outputs_Guide.md` (JSON 스키마 보장) | 대기 |
+| 2 | `06_Memory_Context_Guide.md` (Memory + Context Editing) | 대기 |
+| 3 | `07_Effort_Parameter_Guide.md` (토큰 효율화) | 대기 |
+| 4 | `08_New_Tools_Guide.md` (Web Fetch, Tool Search 등) | 대기 |
+| 5 | `09_Files_MCP_Guide.md` (Files API + MCP Connector) | 대기 |
+| 6 | `10_Claude_Code_v2_Guide.md` (v2.0 새 기능) | 대기 |
 
 ### Phase 1: 문서 보강 (Documentation Enhancement)
 **목표**: 기존 문서의 완성도 높이기 및 누락된 가이드 추가
@@ -139,11 +152,50 @@
 
 ---
 
+### Session 2026-02-02 (2차)
+**참여자**: Bella + Claude (Opus 4.5)
+**목적**: 최신 Claude 기능 조사 및 문서화 계획
+
+**수행 내용**:
+1. Anthropic 공식 사이트 최신 기능 조사
+2. Claude API Release Notes 전체 검토 (2024-2026)
+3. Claude Code CHANGELOG 확인
+4. 15개 이상 신규 기능 발견 및 정리
+5. `NEW_FEATURES_TODO_2026.md` 문서 생성
+
+**발견한 주요 신규 기능**:
+- Structured Outputs (GA) - 2026-01-29
+- Memory Tool - 2025-09-29
+- Context Editing - 2025-09-29
+- Effort Parameter - 2025-11-24
+- Programmatic Tool Calling - 2025-11-24
+- Web Fetch Tool - 2025-09-10
+- Files API - 2025-05-22
+- MCP Connector - 2025-05-22
+
+**플랫폼 변경사항**:
+- console.anthropic.com → platform.claude.com (2026-01-12)
+- Claude Code SDK → Claude Agent SDK 이름 변경
+- Claude Opus 3 퇴역 (2026-01-05)
+
+**결정 사항**:
+- 기존 Phase 1-3 계획을 최신 기능 문서화로 우선순위 변경
+- `NEW_FEATURES_TODO_2026.md`를 마스터 TODO 문서로 활용
+
+**다음 세션 예정 작업**:
+- `05_Structured_Outputs_Guide.md` 작성 시작
+- 또는 사용자 선택에 따른 우선순위 문서 작성
+
+---
+
 ## 참고 링크 / Reference Links
 
 - **GitHub Repository**: https://github.com/bellaliv423/Claude_AI_Knowledge
-- **Anthropic Docs**: https://docs.anthropic.com
-- **Claude Code Docs**: https://docs.anthropic.com/en/docs/claude-code
+- **Claude Platform**: https://platform.claude.com
+- **Claude API Docs**: https://platform.claude.com/docs
+- **Claude API Release Notes**: https://platform.claude.com/docs/en/release-notes/api
+- **Claude Code CHANGELOG**: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
+- **Anthropic News**: https://www.anthropic.com/news
 - **MCP Protocol**: https://modelcontextprotocol.io
 
 ---
@@ -153,6 +205,7 @@
 | 날짜 | 버전 | 변경 내용 | 작성자 |
 |------|------|----------|--------|
 | 2026-02-02 | v1.0 | AI 협업 문서 초기 생성 | Claude |
+| 2026-02-02 | v1.1 | 최신 기능 조사 결과 추가, 참고 링크 업데이트 | Claude |
 
 ---
 
