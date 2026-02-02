@@ -18,16 +18,21 @@
 ```
 Claude_AI_Knowledge/
 ├── README.md                           # 이 파일
+├── init.md                             # 시작점 가이드
+├── AI_Collaboration_Log.md             # AI 협업 기록 및 기획
 ├── 01_Claude_Tools_Complete_Guide.md   # Claude 도구 종합 가이드
 ├── 02_Code_Execution_Setup_Guide.md    # Code Execution 설치 가이드
 ├── 03_MCP_Usage_Guide.md               # MCP 활용 가이드
 ├── 04_Claude_Skills_Guide.md           # Claude Skills 문서
+├── Boris_Cherny_Claude_Code_Best_Practices.md  # Claude Code 창시자 워크플로우
+├── Claude_Opus_4.5_Practical_Guide.md  # Opus 4.5 실전 활용 가이드
 └── examples/                           # 예제 코드
     ├── code_execution_basic.py         # 기본 코드 실행
     ├── container_reuse.py              # 컨테이너 재사용
     ├── programmatic_tool_calling.py    # 프로그래매틱 도구 호출
     ├── batch_api.py                    # Batch API 사용
-    └── mcp_client.py                   # MCP 클라이언트
+    ├── mcp_client.py                   # MCP 클라이언트
+    └── extended_thinking.py            # Extended Thinking 예제
 ```
 
 ---
@@ -113,6 +118,7 @@ python examples/code_execution_basic.py
 | 날짜 | 버전 | 내용 |
 |------|------|------|
 | 2026-01-30 | v1.0 | 초기 버전 작성 |
+| 2026-02-02 | v1.1 | AI 협업 문서 추가, 파일 구조 업데이트 |
 
 ---
 
