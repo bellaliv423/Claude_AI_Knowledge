@@ -60,6 +60,7 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 
 ### 대기 중 (Pending)
 - [ ] `07_Effort_Parameter_Guide.md`
+- [x] `11_OpenClaw_Complete_Guide.md` - 2026-02-03 완료
 - [ ] `08_New_Tools_Guide.md`
 - [ ] `09_Files_MCP_Guide.md`
 - [ ] `10_Claude_Code_v2_Guide.md`
@@ -81,7 +82,12 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 6. [x] GitHub 커밋 완료 (commit: 6feb524)
 7. [x] `06_Memory_Context_Guide.md` 작성 완료
 8. [x] `examples/memory_context.py` 예제 작성 완료
-9. [ ] 2차 GitHub 커밋 (대기)
+9. [x] 2차 GitHub 커밋 완료 (commit: afd4736)
+10. [x] `11_OpenClaw_Complete_Guide.md` 작성 완료
+11. [x] OpenClaw WSL2 설치 완료 (v2026.2.1)
+12. [x] WhatsApp 채널 연결 완료 (+821097805690)
+13. [x] `OpenClaw_Setup_Log_2026-02-03.md` 작성 완료
+14. [ ] **API 키 문제 해결 필요** (HTTP 401 에러)
 
 ---
 
