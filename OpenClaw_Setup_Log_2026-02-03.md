@@ -165,7 +165,7 @@ npx openclaw agent --message "오늘 할 일 정리해줘"
 
 ---
 
-## 현재 상태 (2026-02-03 저녁) / Current Status
+## 현재 상태 (2026-02-04 업데이트) / Current Status
 
 **설치 완료된 것:**
 - OpenClaw 2026.2.1 설치됨
@@ -173,29 +173,29 @@ npx openclaw agent --message "오늘 할 일 정리해줘"
 - Gateway 서비스 설치됨
 - TUI 실행 가능
 
-**해결 필요한 문제:**
+**해결된 문제 (2026-02-04):**
 ```
 HTTP 401 authentication_error: invalid x-api-key
+→ API 키 유효함 확인 완료!
+→ WhatsApp 메시지 전송 테스트 성공!
 ```
 
-**집에서 해야 할 것:**
+### 테스트 결과 (2026-02-04)
+1. **API 키 테스트**: curl로 직접 Anthropic API 호출 → 성공
+2. **Gateway 시작**: `npx openclaw gateway --port 18789` → 정상 실행
+3. **WhatsApp 전송**: `npx openclaw message send --target '+821097805690'` → 성공
+   - Message ID: `3EB00B56E9454FCAEC8240`
 
-### Step 1: 새 API 키 발급
-1. https://platform.claude.com 접속
-2. Settings > API Keys
-3. 새 키 생성 (기존 키 삭제 권장)
-
-### Step 2: API 키 설정
+### 사용 명령어
 ```bash
-# WSL 터미널에서
-wsl
-npx openclaw config set anthropic.apiKey "sk-ant-새로운키"
-```
+# Gateway 시작
+wsl -e bash -c "npx openclaw gateway --port 18789 --verbose"
 
-### Step 3: 테스트
-```bash
-npx openclaw tui
-# TUI에서 메시지 입력 테스트
+# 메시지 전송
+wsl -e bash -c "npx openclaw message send --target '+821097805690' --message '메시지 내용'"
+
+# 상태 확인
+wsl -e bash -c "npx openclaw doctor"
 ```
 
 ---
