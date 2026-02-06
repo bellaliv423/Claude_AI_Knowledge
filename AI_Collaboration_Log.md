@@ -22,6 +22,8 @@
 | 2026-02-02 | AI 협업 문서 생성 및 기획 수립 | Claude |
 | 2026-02-02 | 최신 기능 조사 및 TODO 문서 생성 | Claude |
 | 2026-02-03 | CLAUDE.md 생성, Structured Outputs 가이드 작성 | Claude |
+| 2026-02-05 | Effort Parameter, Cowork Plugins 가이드 작성 | Claude |
+| 2026-02-06 | **Claude Opus 4.6 업데이트 가이드 작성** | Bella + Claude |
 
 ---
 
@@ -139,6 +141,31 @@
 ---
 
 ## 협업 세션 기록 / Collaboration Session Log
+
+### Session 2026-02-06 (오늘)
+**참여자**: Bella + Claude (Opus 4.5)
+**목적**: Claude Opus 4.6 업데이트 정보 정리 및 가이드 작성
+
+**수행 내용**:
+1. Claude Opus 4.6 공식 발표 내용 분석 (2026-02-05 발표)
+2. `08_Claude_Opus_4.6_Update_Guide.md` 작성 및 커밋 완료!
+   - 8가지 신기능 정리 (Adaptive Thinking, Effort Controls, Agent Teams 등)
+   - 벤치마크 비교 (Terminal-Bench 2.0, Humanity's Last Exam 1위)
+   - 가격 변화 분석 (3배 저렴!)
+   - 실전 프롬프트 모음
+3. Code Execution vs Claude in Excel/PPT 차이점 설명
+4. 프롬프트 활용법 안내
+
+**오늘의 성과**:
+- Opus 4.6 가이드 작성 완료!
+- Git 커밋: `486a656`
+
+**내일 이어서 할 작업**:
+- [ ] `13_Enterprise_Integrations_Guide.md` - Slack, Canva, Figma, Box 통합
+- [ ] `08_New_Tools_Guide.md` - Web Fetch, Tool Search
+- [ ] Opus 4.6 실제 사용 테스트 및 가이드 보완
+
+---
 
 ### Session 2026-02-04
 **참여자**: Bella + Claude (Opus 4.5)

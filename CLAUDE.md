@@ -4,7 +4,7 @@
 > **프로젝트**: Claude AI Knowledge Base
 > **GitHub**: https://github.com/bellaliv423/Claude_AI_Knowledge.git
 > **생성일**: 2026-02-03
-> **마지막 업데이트**: 2026-02-04
+> **마지막 업데이트**: 2026-02-06
 
 ---
 
@@ -57,19 +57,85 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 ### 진행 중 (In Progress)
 - [x] `05_Structured_Outputs_Guide.md` - 2026-02-03 완료
 - [x] `06_Memory_Context_Guide.md` - 2026-02-03 완료
+- [x] `07_Effort_Parameter_Guide.md` - 2026-02-05 완료
+- [x] `12_Claude_Cowork_Plugins_Guide.md` - 2026-02-05 완료
+- [x] `08_Claude_Opus_4.6_Update_Guide.md` - 2026-02-06 완료 🆕
 
 ### 대기 중 (Pending)
-- [ ] `07_Effort_Parameter_Guide.md`
 - [x] `11_OpenClaw_Complete_Guide.md` - 2026-02-03 완료
 - [ ] `08_New_Tools_Guide.md`
 - [ ] `09_Files_MCP_Guide.md`
 - [ ] `10_Claude_Code_v2_Guide.md`
+- [ ] `13_Enterprise_Integrations_Guide.md` 🆕
+- [ ] `14_Claude_Constitution_Guide.md` 🆕
 
 ---
 
 ## 오늘 세션 기록 / Today's Session Log
 
-### 2026-02-04 Session
+### 2026-02-06 Session ✨ 오늘의 세션
+**참여자**: Bella + Claude (Opus 4.5)
+**목표**: Claude Opus 4.6 업데이트 정보 정리
+
+**작업 내용**:
+1. [x] Claude Opus 4.6 공식 발표 분석 (2026-02-05 발표)
+2. [x] **`08_Claude_Opus_4.6_Update_Guide.md` 작성 완료!** ✅
+   - Opus 4.6 핵심 스펙 (1M 컨텍스트, 128K 출력)
+   - 8가지 신기능 정리
+   - 벤치마크 비교 (코딩 1위, 추론 1위)
+   - 가격 혁명 (3배 저렴!)
+   - 실전 프롬프트 모음
+   - 비개발자 활용 로드맵
+3. [x] Code Execution vs Claude in Excel/PPT 차이점 설명
+4. [x] Git 커밋 완료 (486a656)
+
+**오늘의 성과**:
+- Opus 4.6 가이드 작성 완료! 🎉
+- 최신 업데이트 지식 베이스 반영 완료
+
+---
+
+### 2026-02-05 Session (이전)
+**참여자**: Bella + Claude (Opus 4.5)
+**목표**: 최신 기능 조사 및 새 가이드 2개 작성
+
+**작업 내용**:
+1. [x] Claude 공식 사이트 최신 업데이트 조사
+2. [x] NEW_FEATURES_TODO_2026.md 대폭 업데이트
+3. [x] **`12_Claude_Cowork_Plugins_Guide.md` 작성 완료!** ✅
+4. [x] **`07_Effort_Parameter_Guide.md` 작성 완료!** ✅
+
+---
+
+## 🌟 내일 이어서 할 작업 (2026-02-07)
+
+**우선순위 순**:
+1. [ ] Opus 4.6 가이드 보완 - 실제 사용 테스트 후 예제 추가
+2. [ ] `13_Enterprise_Integrations_Guide.md` - Slack, Canva, Figma, Box 통합 가이드
+3. [ ] `08_New_Tools_Guide.md` - Web Fetch, Tool Search, Programmatic Tool Calling
+4. [ ] `14_Claude_Constitution_Guide.md` - Claude의 새 헌법 (2026-01-22)
+5. [ ] 이 프로젝트 지식을 엑셀/PPT로 정리 (claude.ai에서 생성)
+
+**시작 방법**:
+```bash
+# 1. Claude Code 실행
+claude
+
+# 2. 이 폴더 열기
+cd D:\Claude_AI_Knowledge
+
+# 3. Claude에게 요청
+"CLAUDE.md 파일을 읽고 내일 할 작업 이어서 해줘"
+```
+
+또는:
+```
+"Opus 4.6 가이드에 실제 사용 예제 추가해줘"
+```
+
+---
+
+### 2026-02-04 Session (이전)
 **참여자**: Bella + Claude (Opus 4.5)
 **목표**: 프로젝트 리뷰 및 기획 수립
 
@@ -85,12 +151,6 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
    - Message ID: `3EB00B56E9454FCAEC8240`
 7. [x] OpenClaw_Setup_Log 문서 업데이트
 8. [ ] GitHub 커밋 (검토 후)
-
-**다음 작업 (우선순위 순)**:
-1. `07_Effort_Parameter_Guide.md` 작성
-2. `08_New_Tools_Guide.md` 작성
-3. `09_Files_MCP_Guide.md` 작성
-4. `10_Claude_Code_v2_Guide.md` 작성
 
 ---
 
@@ -127,9 +187,22 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 
 ## 메모 / Notes
 
-- Structured Outputs는 2026-01-29에 GA 출시됨
+### Structured Outputs
+- 2026-01-29에 GA 출시됨
 - `output_format` → `output_config.format`으로 변경됨
 - 지원 모델: Sonnet 4.5, Opus 4.5, Haiku 4.5
+
+### Effort Parameter (2026-02-05 추가)
+- Opus 4.5 전용 기능
+- Beta 헤더 필요: `effort-2025-11-24`
+- `medium` effort = Sonnet 4.5 성능 + 76% 토큰 절약!
+- `output_config.effort`: "low" | "medium" | "high"
+
+### Claude Cowork (2026-02-05 추가)
+- macOS Desktop 전용 (Windows 미지원)
+- Pro, Max 플랜 필요
+- 11개 공식 플러그인 사용 가능
+- GitHub: https://github.com/anthropics/knowledge-work-plugins
 
 ---
 

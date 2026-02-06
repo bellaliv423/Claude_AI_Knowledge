@@ -1,9 +1,100 @@
 # Claude 최신 기능 업데이트 대기 목록
 # Claude Latest Features Update Queue
 
-> **조사일 / Research Date:** 2026-02-02
+> **조사일 / Research Date:** 2026-02-06 (Updated)
 > **상태 / Status:** 문서화 대기 중
 > **GitHub**: https://github.com/bellaliv423/Claude_AI_Knowledge
+
+---
+
+## 🆕 신규 발견 기능 (2026-02-06 조사)
+
+### Claude Opus 4.6 (최신 발표!) 🔥
+| 항목 | 내용 |
+|------|------|
+| **발표일** | 2026-02-05 |
+| **모델 ID** | `claude-opus-4-6` |
+| **컨텍스트** | **1M 토큰** (Opus급 최초!) |
+| **최대 출력** | **128K 토큰** |
+| **가격** | $5(입력)/$25(출력) per 1M — **3배 저렴!** |
+| **벤치마크** | Terminal-Bench 2.0 1위, Humanity's Last Exam 1위, GDPval-AA +144 Elo |
+| **신기능** | Adaptive Thinking, Effort Controls, Context Compaction, Agent Teams |
+| **문서화** | ✅ `08_Claude_Opus_4.6_Update_Guide.md` 완료! |
+| **공식 링크** | https://www.anthropic.com/news/claude-opus-4-6 |
+
+---
+
+### Claude Cowork Plugins (코워크 플러그인)
+| 항목 | 내용 |
+|------|------|
+| **출시일** | 2026-01-30 |
+| **기능** | 역할별 맞춤 플러그인으로 Cowork 확장 |
+| **플러그인 수** | 11개 오픈소스 플러그인 출시 |
+| **카테고리** | Productivity, Enterprise Search, Marketing, Sales, Finance, Legal, Data Analysis, Customer Support, Product Management, Biology Research |
+| **특징** | Plugin Create로 커스텀 플러그인 생성 가능 |
+| **대상** | Pro, Max 플랜 사용자 |
+| **GitHub** | https://github.com/anthropics/knowledge-work-plugins |
+| **참고** | Sub-agents, Slash commands, Connectors 포함 |
+
+---
+
+### Enterprise App Integrations (기업 앱 통합)
+| 항목 | 내용 |
+|------|------|
+| **출시일** | 2026-01 |
+| **기능** | Claude 인터페이스에서 직접 업무 도구 사용 |
+| **지원 앱** | Slack, Canva, Figma, Box, Clay |
+| **예정** | Salesforce (곧 추가) |
+| **대상** | Pro, Max, Team, Enterprise 플랜 |
+| **설정 URL** | https://claude.ai/directory |
+
+---
+
+### Claude in Chrome Beta (브라우저 제어)
+| 항목 | 내용 |
+|------|------|
+| **출시일** | 2026-02 (Beta) |
+| **기능** | Claude Code에서 브라우저 제어 |
+| **용도** | 웹 자동화, 테스트, 데이터 수집 |
+
+---
+
+### Claude's New Constitution (새 헌법)
+| 항목 | 내용 |
+|------|------|
+| **발표일** | 2026-01-22 |
+| **내용** | Claude의 새로운 원칙 및 가치관 체계 |
+| **문서 링크** | https://www.anthropic.com/news/claude-new-constitution |
+
+---
+
+### GitHub 공식 통합
+| 항목 | 내용 |
+|------|------|
+| **출시일** | 2026-02-04 |
+| **기능** | GitHub에서 Claude 공식 지원 (Public Preview) |
+| **참고** | Codex와 함께 발표됨 |
+| **문서 링크** | https://github.blog/changelog/2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github/ |
+
+---
+
+### 주요 파트너십 발표
+| 날짜 | 파트너 | 내용 |
+|------|--------|------|
+| 2026-01-28 | ServiceNow | 고객 앱 Claude 탑재 |
+| 2026-01-27 | UK Government | GOV.UK AI 어시스턴트 |
+| 2026-01 | NASA | Perseverance 로버 화성 네비게이션 |
+| 2026-02 | Anthropic Legal | 법률 기술 진출 |
+
+---
+
+### 🚨 루머: Claude 5 / Sonnet 5
+| 항목 | 내용 |
+|------|------|
+| **발견일** | 2026-02 초 |
+| **모델 ID** | `claude-sonnet-5@20260203` |
+| **출처** | Google Vertex AI 로그에서 발견 |
+| **상태** | 미확인 (공식 발표 없음) |
 
 ---
 
@@ -195,6 +286,25 @@ response = client.messages.create(
 - mTLS/프록시 지원 (기업 네트워크)
 - OAuth 토큰 만료 수정
 - 커스텀 스피너 동사 설정 (`spinnerVerbs`)
+- Shift+Enter로 줄바꿈 (설정 없이 바로 사용)
+- Hooks를 agents & skills frontmatter에 직접 추가
+- Skills: forked context, hot reload, custom agent 지원
+- `/` 로 skill 호출
+- 도구 사용 거부 시에도 에이전트 계속 실행
+- 응답 언어 설정 가능 (일본어, 스페인어 등)
+- 도구 권한 와일드카드 지원: `Bash(*-h*)`
+- `/teleport` - http://claude.ai/code 로 세션 이동
+
+### v2.1.x 최신 (2026-02-05 기준)
+- **`/debug` 명령어** - 세션 문제 해결용 새 명령어
+- **PDF `pages` 파라미터** - 특정 페이지 범위 읽기 (`pages: "1-5"`)
+- **대용량 PDF 처리 개선** - 10페이지 이상은 경량 참조로 반환
+- **세션 재개 힌트** - 종료 시 재개 방법 표시
+- **일본어 IME 개선** - 전각(全角) 스페이스 입력 지원
+- **MCP OAuth 개선** - `--client-id`, `--client-secret` 옵션 추가
+- **Claude in Chrome Beta** - Claude Code에서 브라우저 제어
+- PDF 세션 잠금 버그 수정
+- Sandbox 모드 "Read-only file system" 오류 수정
 
 ### 새 제품
 - **Claude Cowork**: 비개발자용 GUI 버전 (2026-01 출시)
@@ -213,20 +323,25 @@ response = client.messages.create(
 
 ## 문서화 작업 계획
 
-### Phase 1 (즉시)
-1. [ ] `05_Structured_Outputs_Guide.md`
-2. [ ] `06_Memory_Context_Guide.md` (Memory + Context Editing)
-3. [ ] `07_Effort_Parameter_Guide.md`
+### Phase 1 (완료)
+1. [x] `05_Structured_Outputs_Guide.md` ✅ 2026-02-03 완료
+2. [x] `06_Memory_Context_Guide.md` (Memory + Context Editing) ✅ 2026-02-03 완료
 
-### Phase 2 (1주일 내)
+### Phase 2 (진행 중)
+3. [x] `07_Effort_Parameter_Guide.md` ✅ 2026-02-05 완료
 4. [ ] `08_New_Tools_Guide.md` (Web Fetch, Tool Search, Programmatic)
 5. [ ] `09_Files_MCP_Guide.md` (Files API + MCP Connector)
 6. [ ] `10_Claude_Code_v2_Guide.md`
 
-### Phase 3 (2주일 내)
-7. [ ] 기존 문서 업데이트 (모델 ID, URL 변경 반영)
-8. [ ] README.md 업데이트
-9. [ ] examples/ 폴더에 새 예제 추가
+### Phase 3 (신규 추가 - 2026-02-05)
+7. [x] `12_Claude_Cowork_Plugins_Guide.md` ✅ 2026-02-05 완료
+8. [ ] `13_Enterprise_Integrations_Guide.md` 🆕
+9. [ ] `14_Claude_Constitution_Guide.md` 🆕
+
+### Phase 4 (유지보수)
+10. [ ] 기존 문서 업데이트 (모델 ID, URL 변경 반영)
+11. [ ] README.md 업데이트
+12. [ ] examples/ 폴더에 새 예제 추가
 
 ---
 
@@ -263,7 +378,7 @@ cd D:\Claude_AI_Knowledge
 
 ---
 
-> **마지막 업데이트**: 2026-02-02
-> **다음 작업**: Structured Outputs 가이드 작성
+> **마지막 업데이트**: 2026-02-06
+> **다음 작업**: Enterprise Integrations 가이드 또는 New Tools 가이드 작성
 
 *Made with Claude by Bella (OZKIZ)*
