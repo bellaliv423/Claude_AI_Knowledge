@@ -28,6 +28,27 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 3. **예제 포함**: 실행 가능한 코드 예제 필수
 4. **버전 기록**: 생성일, 업데이트일 명시
 
+### 🔄 세션 시작/종료 프로세스 (2026-02-09 확립)
+
+**세션 시작 시 Claude가 할 일:**
+1. `CLAUDE.md` 읽기 → 이전 작업 현황 파악
+2. `git status` → 미커밋 파일 확인
+3. 오늘 세션 기록 추가
+4. 사용자와 오늘 작업 계획 논의
+
+**세션 종료 전 Claude가 할 일:**
+1. 오늘 작업 내용을 CLAUDE.md에 기록 (체크박스 업데이트)
+2. AI_Collaboration_Log.md 업데이트
+3. 다음 세션 TODO 정리
+4. **사용자 승인 후** Git 커밋 & Push
+5. 저장소 확인: `bellaliv423/Claude_AI_Knowledge` (다른 곳 커밋 금지!)
+
+**빠른 시작 명령어:**
+```
+"CLAUDE.md 읽고 오늘 작업 이어서 해줘"
+"프로젝트 리뷰하고 계획 세워줘"
+```
+
 ### 파일 네이밍
 - 가이드: `XX_Feature_Name_Guide.md` (번호순)
 - 예제: `examples/feature_name.py`
@@ -78,11 +99,11 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 **목표**: Git 정리, 프로젝트 리뷰, 투두/협업 프로세스 세팅
 
 **작업 내용**:
-1. [ ] 프로젝트 전체 리뷰 및 현황 파악
-2. [ ] Git 정리 - Untracked 파일 5개 커밋
-3. [ ] 대기 중인 커밋 2개 + 신규 커밋 → Push
-4. [ ] CLAUDE.md 및 AI_Collaboration_Log.md 업데이트
-5. [ ] 투두 자동화 프로세스 논의
+1. [x] 프로젝트 전체 리뷰 및 현황 파악 ✅
+2. [x] Git 정리 - Untracked 파일 5개 커밋 ✅
+3. [x] 대기 중인 커밋 2개 + 신규 커밋 → Push ✅ (commit: 8332523)
+4. [x] CLAUDE.md 및 AI_Collaboration_Log.md 업데이트 ✅
+5. [x] 투두 자동화 프로세스 논의 ✅ (CLAUDE.md 중심 방식 확립)
 
 **Untracked 파일 (커밋 대기)**:
 - `07_Effort_Parameter_Guide.md`
