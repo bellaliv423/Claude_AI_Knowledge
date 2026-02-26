@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - structured-outputs
+  - json
+  - api
+---
+
 # Structured Outputs 완벽 가이드
 # Structured Outputs Complete Guide
 

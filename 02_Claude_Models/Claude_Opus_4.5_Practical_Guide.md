@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - opus
+  - 4-5
+  - practical
+---
+
 # Claude Opus 4.5 실전 활용 가이드
 # Claude Opus 4.5 實戰應用指南
 

@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - memory
+  - context
+  - conversation
+---
+
 # Memory Tool & Context Editing 완벽 가이드
 # Memory Tool & Context Editing Complete Guide
 

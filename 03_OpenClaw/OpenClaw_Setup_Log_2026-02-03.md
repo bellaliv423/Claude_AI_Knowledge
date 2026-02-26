@@ -1,3 +1,11 @@
+---
+tags:
+  - openclaw
+  - setup
+  - log
+  - troubleshooting
+---
+
 # OpenClaw Setup Log - 2026-02-03
 # OpenClaw 설치 기록
 

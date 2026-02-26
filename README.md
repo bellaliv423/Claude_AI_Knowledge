@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - knowledge-base
+  - index
+  - readme
+---
+
 # Claude AI Knowledge Base
 
 > **Author**: Bella (OZKIZ)

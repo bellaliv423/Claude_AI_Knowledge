@@ -1,10 +1,18 @@
+---
+tags:
+  - project
+  - log
+  - collaboration
+  - history
+---
+
 # AI Collaboration Log
 # AI 협업 기록
 
 > **GitHub**: https://github.com/bellaliv423/Claude_AI_Knowledge.git
 > **Author**: Bella (OZKIZ)
-> **AI Partner**: Claude (Opus 4.5)
-> **Last Updated**: 2026-02-09
+> **AI Partner**: Claude (Opus 4.6)
+> **Last Updated**: 2026-02-12
 
 ---
 
@@ -24,6 +32,9 @@
 | 2026-02-03 | CLAUDE.md 생성, Structured Outputs 가이드 작성 | Claude |
 | 2026-02-05 | Effort Parameter, Cowork Plugins 가이드 작성 | Claude |
 | 2026-02-06 | **Claude Opus 4.6 업데이트 가이드 작성** | Bella + Claude |
+| 2026-02-12 | **Windows 11 Home Hyper-V 설치 + Cowork 정상 가동** | Bella + Claude |
+| 2026-02-12 | **Cowork 설치 가이드 & 트러블슈팅 문서 작성** | Claude |
+| 2026-02-12 | **MEMORY.md 전체 인덱스 + 지식 파일 동기화** | Claude |
 
 ---
 

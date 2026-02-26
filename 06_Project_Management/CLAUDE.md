@@ -1,10 +1,18 @@
+---
+tags:
+  - project
+  - claude
+  - collaboration
+  - session-log
+---
+
 # CLAUDE.md - AI 협업 메모리
 # AI Collaboration Memory
 
 > **프로젝트**: Claude AI Knowledge Base
 > **GitHub**: https://github.com/bellaliv423/Claude_AI_Knowledge.git
 > **생성일**: 2026-02-03
-> **마지막 업데이트**: 2026-02-09
+> **마지막 업데이트**: 2026-02-26
 
 ---
 
@@ -82,19 +90,44 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 - [x] `12_Claude_Cowork_Plugins_Guide.md` - 2026-02-05 완료
 - [x] `08_Claude_Opus_4.6_Update_Guide.md` - 2026-02-06 완료 🆕
 
-### 대기 중 (Pending)
+### 대기 중 (Pending) → 완료!
 - [x] `11_OpenClaw_Complete_Guide.md` - 2026-02-03 완료
-- [ ] `08_New_Tools_Guide.md`
-- [ ] `09_Files_MCP_Guide.md`
-- [ ] `10_Claude_Code_v2_Guide.md`
-- [ ] `13_Enterprise_Integrations_Guide.md` 🆕
-- [ ] `14_Claude_Constitution_Guide.md` 🆕
+- [x] `08_New_Tools_Guide.md` - 2026-02-26 완료 ✅
+- [x] `09_Files_MCP_Guide.md` - 2026-02-26 완료 ✅
+- [x] `10_Claude_Code_v2_Guide.md` - 2026-02-26 완료 ✅
+- [x] `13_Enterprise_Integrations_Guide.md` - 2026-02-26 완료 ✅
+- [x] `14_Claude_Constitution_Guide.md` - 2026-02-26 완료 ✅
 
 ---
 
 ## 오늘 세션 기록 / Today's Session Log
 
-### 2026-02-09 Session ✨ 오늘의 세션
+### 2026-02-12 Session ✨ 오늘의 세션
+**참여자**: Bella + Claude (Opus 4.6)
+**목표**: Claude Desktop Cowork 설치 및 Windows 11 Home 환경 설정
+
+**작업 내용**:
+1. [x] Hyper-V 설치 확인 (재부팅 후) ✅
+2. [x] vmms, vmcompute, CoworkVMService 서비스 상태 점검 - 모두 RUNNING ✅
+3. [x] rootfs.vhdx 파일 확인 (9.4GB, Archive 속성, 압축 없음) ✅
+4. [x] Named Pipe (cowork-vm-service) 정상 확인 ✅
+5. [x] **Cowork 정상 작동 확인!** "할 일을 처리해 볼까요?" 화면 표시 ✅
+6. [x] `claude-desktop-cowork-setup-guide.md` 작성 (종합 설치 가이드) ✅
+7. [x] `cowork-vm-troubleshooting.md` 보강 (5가지 오류 해결법) ✅
+8. [x] `MEMORY.md` 업데이트 (전체 파일 인덱스) ✅
+9. [x] D:\Claude_AI_Knowledge 파일 → memory 디렉토리 복사 완료 ✅
+10. [x] 신규 3개 파일 → D:\Claude_AI_Knowledge 저장 완료 ✅
+
+**신규 파일**:
+- `claude-desktop-cowork-setup-guide.md` (10KB) - 완전 설치 가이드
+- `cowork-vm-troubleshooting.md` (5.5KB) - 오류 해결 가이드
+- `MEMORY.md` (2.3KB) - 전체 파일 인덱스
+
+**핵심 성과**: Windows 11 Home에서 Hyper-V 수동 설치 → Cowork 정상 가동 성공!
+
+---
+
+### 2026-02-09 Session (이전)
 **참여자**: Bella + Claude (Opus 4.5)
 **목표**: Git 정리, 프로젝트 리뷰, 투두/협업 프로세스 세팅
 
@@ -138,14 +171,14 @@ Claude AI의 모든 고급 기능을 체계적으로 정리한 지식 베이스.
 
 ---
 
-## 🌟 다음 세션 할 작업 (2026-02-10~)
+## 🌟 다음 세션 할 작업
 
-**우선순위 순**:
-1. [ ] `13_Enterprise_Integrations_Guide.md` - Slack, Canva, Figma, Box 통합 가이드
-2. [ ] `08_New_Tools_Guide.md` - Web Fetch, Tool Search, Programmatic Tool Calling
-3. [ ] `14_Claude_Constitution_Guide.md` - Claude의 새 헌법 (2026-01-22)
+**모든 가이드 문서 완료!** 남은 작업:
+1. [ ] README.md 업데이트 (새 문서 14개 반영, 폴더 구조 업데이트)
+2. [ ] 기존 01~04 문서에 URL 변경 반영 (console.anthropic.com → platform.claude.com)
+3. [ ] examples/ 폴더에 새 예제 추가
 4. [ ] Opus 4.6 가이드 보완 - 실제 사용 테스트 후 예제 추가
-5. [ ] 이 프로젝트 지식을 엑셀/PPT로 정리 (claude.ai에서 생성)
+5. [ ] Git 커밋 & Push (사용자 승인 후)
 
 **시작 방법**:
 ```bash

@@ -44,6 +44,9 @@ wheels/
 .pydevproject
 .settings/
 
+# Office temp files
+~$*
+
 # OS
 .DS_Store
 .DS_Store?

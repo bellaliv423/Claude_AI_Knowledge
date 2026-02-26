@@ -1,3 +1,11 @@
+---
+tags:
+  - project
+  - init
+  - setup
+  - getting-started
+---
+
 # Claude AI Knowledge Base
 # Claude AI 知識庫
 

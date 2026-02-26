@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - effort
+  - optimization
+  - opus
+---
+
 # Effort Parameter 완벽 가이드
 # Effort Parameter Complete Guide
 

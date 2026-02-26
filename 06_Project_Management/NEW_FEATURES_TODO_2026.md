@@ -1,3 +1,12 @@
+---
+tags:
+  - project
+  - todo
+  - features
+  - 2026
+  - roadmap
+---
+
 # Claude 최신 기능 업데이트 대기 목록
 # Claude Latest Features Update Queue
 

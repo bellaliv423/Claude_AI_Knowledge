@@ -1,3 +1,11 @@
+---
+tags:
+  - claude-code
+  - best-practices
+  - tips
+  - boris-cherny
+---
+
 # Boris Cherny의 Claude Code 활용 가이드
 # Boris Cherny 的 Claude Code 使用指南
 

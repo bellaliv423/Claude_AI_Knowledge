@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - cowork
+  - plugins
+  - desktop
+---
+
 # Claude Cowork & Plugins 완벽 가이드
 # Claude Cowork & Plugins Complete Guide
 

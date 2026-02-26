@@ -1,3 +1,12 @@
+---
+tags:
+  - openclaw
+  - setup
+  - wsl
+  - whatsapp
+  - guide
+---
+
 # OpenClaw (구 Moltbot/Clawdbot) 완벽 가이드
 # OpenClaw Complete Guide - Personal AI Assistant
 

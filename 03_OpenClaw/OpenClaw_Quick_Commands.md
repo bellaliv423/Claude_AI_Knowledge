@@ -1,3 +1,11 @@
+---
+tags:
+  - openclaw
+  - commands
+  - quick-reference
+  - cheatsheet
+---
+
 # OpenClaw 빠른 실행 가이드 / Quick Commands
 
 > **Last Updated**: 2026-02-04

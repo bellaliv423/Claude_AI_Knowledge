@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - mcp
+  - model-context-protocol
+  - integration
+---
+
 # MCP 활용 가이드
 # Model Context Protocol Usage Guide
 

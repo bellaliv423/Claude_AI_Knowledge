@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - code-execution
+  - setup
+  - sandbox
+---
+
 # Code Execution 설치 가이드
 # Code Execution Setup Guide
 

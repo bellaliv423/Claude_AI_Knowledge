@@ -1,3 +1,11 @@
+---
+tags:
+  - claude
+  - opus
+  - model-update
+  - 4-6
+---
+
 # Claude Opus 4.6 업데이트 완전 정리
 ## 비개발자도 쉽게 이해하는 최신 기능 가이드
 
