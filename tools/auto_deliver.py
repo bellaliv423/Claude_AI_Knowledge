@@ -85,19 +85,26 @@ Sent by Claude Auto Mail
 
 
 def send_via_whatsapp(file_path):
-    """OpenClaw을 통해 WhatsApp으로 알림 전송"""
+    """OpenClaw을 통해 WhatsApp으로 파일 + 메시지 전송"""
     file_name = os.path.basename(file_path)
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
-    message = f"[Claude Auto] 파일 완성!\n\n파일: {file_name}\n시간: {now}\nPC 경로: {os.path.abspath(file_path)}\n\n이메일로도 발송되었습니다."
+    message = f"[Claude Auto] {file_name} ({now})"
+    safe_msg = message.replace("'", "'\\''")
+
+    # Windows 경로를 WSL 경로로 변환 (D:\foo\bar → /mnt/d/foo/bar)
+    abs_path = os.path.abspath(file_path)
+    drive = abs_path[0].lower()
+    wsl_path = f"/mnt/{drive}/{abs_path[3:].replace(chr(92), '/')}"
 
     try:
         result = subprocess.run(
-            ["wsl", "-e", "bash", "-c",
-             f"source ~/.bashrc && npx openclaw message send --target '{WHATSAPP_NUMBER}' --message '{message}'"],
-            capture_output=True, text=True, timeout=30
+            ["wsl", "-d", "Ubuntu", "--", "bash", "-c",
+             f"source ~/.bashrc 2>/dev/null && npx openclaw message send -t '{WHATSAPP_NUMBER}' -m '{safe_msg}' --media '{wsl_path}'"],
+            capture_output=True, text=True, timeout=120,
+            encoding="utf-8", errors="replace"
         )
         if result.returncode == 0:
-            print(f"  [WHATSAPP] {WHATSAPP_NUMBER} -> 알림 발송 완료!")
+            print(f"  [WHATSAPP] {WHATSAPP_NUMBER} -> 파일 + 메시지 발송 완료!")
             return True
         else:
             print(f"  [WHATSAPP] 발송 실패: {result.stderr}")
